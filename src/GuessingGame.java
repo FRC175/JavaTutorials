@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class GuessingGame {
 
     public static void main(String[] args) {
-        Scanner keyboard = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         int randomNum = (int) (Math.random() * 99) + 1;
         int count = 0;
         int guess = 0;
@@ -11,7 +11,7 @@ public class GuessingGame {
         System.out.println("I am thinking of a number from 1 to 100... Guess what it is.");
 
         while (guess != randomNum) {
-            guess = keyboard.nextInt();
+            guess = input.nextInt();
             count++;
 
             if (guess > randomNum) {
