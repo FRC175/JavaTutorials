@@ -1,7 +1,10 @@
+import dealership.Car;
+import dealership.MotorVehicle;
+
 public class CarTester {
 
     public static void main(String[] args) {
-        Car elonMusk = new Car("ElonMusk", "electric", 1995, 12000, 50000, "Blue", 125);
+        /*Car elonMusk = new Car("ElonMusk", "electric", 1995, 12000, 50000, "Blue", 125);
 
         System.out.println("Make: " + elonMusk.getMake());
         System.out.println("Model: " + elonMusk.getModel());
@@ -13,7 +16,12 @@ public class CarTester {
 
         elonMusk.accelerate();
         elonMusk.brake();
-        elonMusk.decelerate();
+        elonMusk.decelerate();*/
+        MotorVehicle parker = new MotorVehicle("Parker", "xmka", 2000, 13025, 60000, "White", 130);
+        parker.characteristics();
+
+
+
     }
 
 }
