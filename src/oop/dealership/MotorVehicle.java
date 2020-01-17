@@ -1,4 +1,4 @@
-package dealership;
+package oop.dealership;
 
 public class MotorVehicle {
 
@@ -52,8 +52,9 @@ public class MotorVehicle {
     public int getCurrentSpeed() {
         return currentSpeed;
     }
+
     public void accelerate() {
-        currentSpeed +
+        //currentSpeed +
     }
 
 }

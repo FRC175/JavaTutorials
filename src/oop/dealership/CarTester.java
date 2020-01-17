@@ -1,5 +1,4 @@
-import dealership.Car;
-import dealership.MotorVehicle;
+package oop.dealership;
 
 public class CarTester {
 
@@ -17,8 +16,8 @@ public class CarTester {
         elonMusk.accelerate();
         elonMusk.brake();
         elonMusk.decelerate();*/
-        MotorVehicle parker = new MotorVehicle("Parker", "xmka", 2000, 13025, 60000, "White", 130);
-        parker.characteristics();
+        // MotorVehicle parker = new MotorVehicle("Parker", "xmka", 2000, 13025, 60000, "White", 130);
+        // parker.characteristics();
 
 
 
