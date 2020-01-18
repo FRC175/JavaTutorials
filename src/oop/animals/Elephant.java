@@ -1,33 +1,21 @@
 package oop.animals;
 
-public class Elephant {
+public class Elephant extends Animal {
 
-    int size;
-    String type;
-    String name;
+    int trunkSize;
 
-    void sleep() {
-        System.out.println("Zzz...");
+    Elephant() {
+        food = "vegetables";
     }
 
-    void eat() {
-        System.out.println("I love eating plants!");
-    }
-
-    void storm() {
-        System.out.println("Thump! Thump! Thump!");
-    }
-
+    @Override
     void makeNoise() {
-        System.out.println("Baraa!!!");
+        System.out.println("Phht!");
     }
 
-    void sit() {
-        System.out.println(name + " is now sitting.");
-    }
-
-    String description() {
-        return name + " is " + type + " who is " + size + " inches.";
+    @Override
+    void doTricks() {
+        System.out.println(name + " twirled their trunk!");
     }
 
 }

@@ -1,33 +1,27 @@
 package oop.animals;
 
-public class Dog {
+public class Dog extends Animal {
 
-    int size;
-    String type;
-    String name;
+    String furColor;
 
-    void sleep() {
-        System.out.println("Zzz...");
+    // Constructor
+    // no return type
+    // same name as the class
+    Dog() {
+        // What we change from superclass (Animal)
+        food = "meat";
     }
 
-    void eat() {
-        System.out.println("I love eating meat!");
-    }
-
+    @Override
     void makeNoise() {
-        System.out.println("Ruff! Ruff!");
+        System.out.println("Bark! Bark!");
     }
 
-    void sit() {
-        System.out.println(name + " is now sitting.");
-    }
-
-    void roll() {
-        System.out.println(name + " rolled over!");
-    }
-
+    @Override
     String description() {
-        return name + " is a " + type + " that is " + size + " inches.";
+        return "The dog's name is " + name + ". The dog's breed is " + breed
+                + ". The dog's age is " + age + ". The dog is " + size +
+                " inches tall. The dog's fur color is " + furColor + ".";
     }
 
 }
