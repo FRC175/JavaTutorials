@@ -4,22 +4,22 @@ public class DogTester {
 
     public static void main(String[] args) {
         Dog jerry = new Dog();
-        jerry.name = "Jerry";
-        jerry.age = 32;
-        jerry.size = 1;
-        jerry.breed = "Pug";
-        jerry.furColor = "pink";
+        jerry.setName("Jerry");
+        jerry.setAge(32);
+        jerry.setSize(1);
+        jerry.setBreed("Pug");
+        jerry.setFurColor("pink");
         jerry.run();
         jerry.eat();
         jerry.sleep();
         System.out.println(jerry.description());
 
         Dog tim = new Dog();
-        tim.name = "Tim";
-        tim.age = 3;
-        tim.size = 10;
-        tim.breed = "German Shepard";
-        tim.furColor = "Brown";
+        tim.setName("Tim");
+        tim.setAge(3);
+        tim.setSize(10);
+        tim.setBreed("German Shepard");
+        tim.setFurColor("Brown");
         tim.run();
         tim.eat();
         tim.sleep();
